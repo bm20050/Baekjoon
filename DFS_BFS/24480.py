@@ -1,4 +1,4 @@
-# 알고리즘 수업 - 깊이 우선 탐색 1
+# 알고리즘 수업 - 깊이 우선 탐색 2
 
 import sys
 
@@ -23,7 +23,7 @@ def dfs(x):
     if visited[x] == 1:
         return
     visited[x] = count
-    array[x].sort()
+    array[x].sort(reverse=True)
     for i in array[x]:
         if visited[i] == 0:
             count += 1
