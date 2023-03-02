@@ -9,12 +9,12 @@ for _ in range(m):
 visited = [0] * (n + 1)
 
 
-
 def dfs(r):
     visited[r] = 1
     for i in array:
         if visited[i[1]] != 1:
             dfs(i[1])
+
 
 dfs(r)
 for i in range(1, len(visited)):
