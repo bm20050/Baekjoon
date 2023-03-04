@@ -5,8 +5,8 @@ n = int(input())
 stack = [0] * 10000
 top = -1
 for _ in range(n):
-    s = sys.stdin.readline()
-    print(s)
+    s = sys.stdin.readline().strip()
+    # print(s)
     if 'push' in s:
         top += 1
         s = s.split(' ')
